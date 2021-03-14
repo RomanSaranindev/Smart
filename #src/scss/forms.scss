@@ -11,22 +11,45 @@
 	&__button {
 	}
 	&__error {
+		position: absolute;
+		top: 50px;
+		left: 40px;
+		padding: 15px 0px 0px 0px;
+		opacity: 0.6;
+		font-size: 15px;
+		color: rgba(255, 0, 0, 0.6);
 	}
 }
-
+.forms__popup {
+	width: 100%;
+	text-align: center;
+}
 //</FORM>====================================================================================================
 
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .btn {
 	display: inline-flex;
-	padding: 0px 0px;
+	padding: 0px 32px;
+	height: 55px;
+	align-items: center;
+	border-radius: 27px;
+	box-shadow: 1.9px 10.8px 20px 0 rgba(20, 20, 21, 0.08);
+	border: solid 1px rgba(1, 2, 2, 0.07);
+	background-color: #ff5c36;
+	transition: all 0.3s ease 0s;
 	@media (min-width: 992px) {
 		&:hover {
+			background-color: #fa542e;
+			._icon-arrow {
+				transform: translate(5px, 0px);
+			}
 		}
 	}
 	&._fw {
 		width: 100%;
 	}
+	font-size: 16px;
+	color: #ffffff;
 }
 //</BUTTONS>====================================================================================================
 
@@ -139,11 +162,22 @@ textarea {
 	&._focus {
 	}
 	&._error {
+		border-bottom: 1px solid rgb(255, 0, 0);
 	}
+	opacity: 0.6;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.6);
+	padding: 0px 0px 9px 0px;
+	margin: 0px 0px 35px 0px;
+	&:last-child {
+		margin: 0px 0px 20px 0px;
+	}
+	border-bottom: 1px solid #000;
 }
 textarea.input {
 	resize: none;
 	padding: 0px 0px;
+	min-height: 83px;
 }
 //</INPUT>====================================================================================================
 
@@ -314,6 +348,45 @@ textarea.input {
 	font-size: 14px;
 	line-height: 13px;
 	vertical-align: middle;
+}
+//</RATING>====================================================================================================
+
+//<QUANTITY>====================================================================================================
+.quantity {
+	position: relative;
+	width: 73px;
+	height: 47px;
+	border: 1px solid #cfcfcf;
+	background-color: #ffffff;
+}
+.quantity__input {
+	height: 45px;
+	width: 50px;
+	text-align: center;
+	color: #101010;
+	font-weight: 300;
+}
+.quantity__btn {
+	position: absolute;
+	top: 11px;
+	right: 15px;
+	cursor: pointer;
+	&:before {
+		font-size: 25px;
+		display: inline-block;
+		line-height: 10px;
+		color: #a9a9a9;
+	}
+	&:hover {
+		&:before {
+			color: #da0005;
+		}
+	}
+	&.up {
+	}
+	&.dwn {
+		top: 25px;
+	}
 }
 //</RATING>====================================================================================================
 

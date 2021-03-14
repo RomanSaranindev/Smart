@@ -1,5 +1,51 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
-
+.title {
+	opacity: 0.94;
+	white-space: nowrap;
+	@include adaptiv-font(50, 22, 50);
+	font-weight: 600;
+	line-height: 0.92;
+	color: rgba(98, 98, 98, 0.94);
+	span {
+		color: rgba(252, 103, 68, 0.94);
+	}
+}
+.text {
+	opacity: 0.65;
+	@include adaptiv-font(16, 14, 16);
+	line-height: 1.56;
+	color: rgba(0, 0, 0, 0.65);
+}
+.button {
+	white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
+	flex-flow: row-reverse;
+	height: 55px;
+	padding: 0px 50px;
+	border-radius: 27px;
+	box-shadow: 0 0 14px 0 rgba(20, 20, 21, 0.05);
+	background-color: #ffffff;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.8);
+	transition: all 0.3s ease 0s;
+	&:hover {
+		box-shadow: 0 0 14px 0 rgba(21, 21, 22, 0.05);
+		color: rgba(0, 0, 0, 0.877);
+		background-color: #fcf1f1;
+		._icon-plus {
+			animation: plus 0.8s linear 0s;
+		}
+	}
+}
+@keyframes plus {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
@@ -225,6 +271,46 @@ body.ie {
 	display: none !important;
 }
 //====================================================================================================
+.slick-slider {
+	position: relative;
+	.slick-track,
+	.slick-list {
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.slick-list {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+	}
+	.slick-track {
+		position: relative;
+		width: 100%;
+		display: flex;
+	}
+	.slick-slide {
+		position: relative;
+	}
+	.slick-arrow {
+		&.slick-prev {
+		}
+		&.slick-next {
+		}
+	}
+	.slick-dots {
+		li {
+			button {
+			}
+			&.slick-active {
+				button {
+				}
+			}
+		}
+	}
+}
 //=====================================================================================================================
 ._tabs {
 }

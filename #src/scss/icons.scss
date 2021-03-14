@@ -25,7 +25,32 @@
 	}
 }
 
-._icon-f:before { content: "\EA01"; }
-._icon-feather_edit:before { content: "\EA02"; }
-._icon-Group 18:before { content: "\EA03"; }
-._icon-Group 70:before { content: "\EA04"; }
+._icon-plus:before {
+	content: "\e907";
+	padding: 0px 17px 0px 0px;
+}
+._icon-arrow:before {
+	content: "\e908";
+	padding: 0px 0px 0px 5px;
+}
+._icon-twitter:before {
+	content: "\e900";
+}
+._icon-camera:before {
+	content: "\e901";
+}
+._icon-dribbble:before {
+	content: "\e902";
+}
+._icon-facebook:before {
+	content: "\e903";
+}
+._icon-settings:before {
+	content: "\e904";
+}
+._icon-bug:before {
+	content: "\e905";
+}
+._icon-magnet:before {
+	content: "\e906";
+}

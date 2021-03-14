@@ -59,20 +59,22 @@
 		transform: scale(0);
 		transition: all 0.3s ease 0s;
 		background-color: #fff;
-		padding: 50px;
+		padding: 25px;
 		width: 100%;
-		max-width: 800px;
+		max-width: 400px;
 	}
 	// .popup__close
 	&__close {
 		width: 15px;
 		height: 15px;
 		position: absolute;
-		top: 0px;
-		right: 0px;
+		top: 15px;
+		right: 15px;
 		cursor: pointer;
 		z-index: 30;
-		background: url("../img/icons/close.svg") 0 0 no-repeat;
+		font-size: 15px;
+		color: #000;
+		transform: rotate(45deg);
 	}
 }
 //====================================================================================================
